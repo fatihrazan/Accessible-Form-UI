@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 240px;
+}
+.accessform{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 600px;
+    height: 400px;
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input{
+    width: 250px;
+    padding: 5px;
+    border-radius: 3px;
+}
+#Email:focus{
+    color: red;
+    outline: 2px solid #ff0000;
+    outline-offset: 0;
+}   
+
+#email-error{
+    color: red;
+    font-size: smaller;
+}
+
+input:focus {
+    outline: 2px solid #7f7f7f;
+    outline-offset: 0;
+}
+
+.Update{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: large;
+    width: 240px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.Update:hover{
+    background-color: gainsboro;
+    color: black;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin-top: 0;
+}
+
+.circular{
+    display: flex;
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid rgb(211, 211, 211);
+}
+
+.todo{
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: smaller;
+    height: 160px;
+    width: 100%;
+}
+
+.done{
+    text-decoration: line-through;
+    color: gray;
+}

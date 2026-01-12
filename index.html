@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="accessform">
+        <div class="input">
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fullname" name="fullname" placeholder="What should we call you?">
+            <br>    
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" placeholder="blablabla@gmail.com" aria-describedby="email-error">
+            <span id="email-error">Email tidak valid</span>
+            <br> <br>
+
+            <label for="enterpass">Enter Password</label>
+            <input type="password" id="enterpass" name="enterpass" placeholder="xxxxxx" area-required="true" area-invalid="true">
+            <br>
+            <label for="confirmpass">Confirm Password</label>
+            <input type="password" id="confirmpass" name="confirmpass" placeholder="xxxxxx">
+            <br>
+            <button class="Update">Update Profile</button>
+        </div>
+
+        <div class="progress">
+            <div class="circular">
+                <h3>65%</h3>
+            </div>
+            <h3>Profile Completeness</h3>
+            <div class="todo">
+                <p class="done">Create Account</p>
+                <p class="done">Update Roadmap Progress</p>
+                <p class="done">Setup Public Profile</p>
+                <p>Complete your first project</p>
+                <p>Invite your friends</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
